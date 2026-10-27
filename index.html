@@ -109,8 +109,8 @@ footer{margin-top:24px; color:var(--muted); font-size:.85rem; text-align:center}
         </div>
         <div class="field">
           <div class="seg" role="radiogroup" aria-label="الطالب أو الطالبة">
-            <input type="radio" name="gender" id="gM" value="m" checked><label for="gM">المقدمة من الطالب</label>
-            <input type="radio" name="gender" id="gF" value="f"><label for="gF">المقدمة من الطالبة</label>
+            <input type="radio" name="gender" id="gM" value="m" checked><label for="gM">والمقدمة من الطالب</label>
+            <input type="radio" name="gender" id="gF" value="f"><label for="gF">والمقدمة من الطالبة</label>
           </div>
         </div>
       </div>
@@ -2544,7 +2544,7 @@ var qrcode = function() {
     }
 
     // student label + name
-    { const lab=gender()==='f' ? 'المقدمة من الطالبة' : 'المقدمة من الطالب'; const f=fitLines(ctx,lab,360,36.9,1); text(ctx, lab, 737, 744, f.size, NAVY); }
+    { const lab=gender()==='f' ? 'والمقدمة من الطالبة' : 'والمقدمة من الطالب'; const f=fitLines(ctx,lab,360,36.9,1); text(ctx, lab, 737, 744, f.size, NAVY); }
     const n=val('name');
     if(n){ const {size}=fitLines(ctx,n,420,36.9,1); text(ctx,n,736,782,size,NAVY); }
 
