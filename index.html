@@ -103,7 +103,7 @@ footer{margin-top:24px; color:var(--muted); font-size:.85rem; text-align:center}
         <h2>نوع المناقشة</h2>
         <div class="field">
           <div class="seg" role="radiogroup" aria-label="الدرجة العلمية">
-            <input type="radio" name="degree" id="degM" value="master" checked><label for="degM">رسالة الماجستير</label>
+            <input type="radio" name="degree" id="degM" value="master" checked><label for="degM">رسالة ماجستير</label>
             <input type="radio" name="degree" id="degD" value="phd"><label for="degD">رسالة الدكتوراه</label>
           </div>
         </div>
@@ -2532,7 +2532,7 @@ var qrcode = function() {
     if(img.complete && img.naturalWidth) ctx.drawImage(img,0,0,W,H); else { ctx.fillStyle='#fff'; ctx.fillRect(0,0,W,H); }
 
     // banner
-    const deg = degree()==='phd' ? 'مناقشة خطة بحثية لرسالة دكتوراه بعنوان' : 'مناقشة خطة بحثية لرسالة الماجستير بعنوان';
+    const deg = degree()==='phd' ? 'مناقشة خطة بحثية لرسالة دكتوراه بعنوان' : 'مناقشة خطة بحثية لرسالة ماجستير بعنوان';
     { const f=fitLines(ctx,deg,560,36.9,1); text(ctx, deg, 745, 432, f.size, '#ffffff'); }
 
     // title inside the box (center 739, 579), width 788
